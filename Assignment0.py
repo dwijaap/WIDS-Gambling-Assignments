@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
 # Create a 2D Numpy array of size 1x3 with elements of your choice
 arr1=np.array([[1,2,3],])
 
@@ -11,6 +12,8 @@ arr3=np.array([[1,2],[3,4],[5,6]])
 
 #Multiply arr1 and arr3 using Numpy functions
 arr4= np.dot(arr1,arr3)
+
+
 '''
 np.zeros((1 , 2))
 
