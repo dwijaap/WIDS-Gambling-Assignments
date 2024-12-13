@@ -1,4 +1,3 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 # Create a 2D Numpy array of size 1x3 with elements of your choice
