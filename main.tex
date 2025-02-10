@@ -1,0 +1,66 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Report for WIDS: Gambling with RL}
+\author{Dwija Patel}
+\date{February 2025}
+
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+
+This project has given me insights into the world of reinforcement learning(RL). Over the course of this project I have learned a variety of things which can be applied in real-world problems.
+The following report outlines the same.
+
+\section{Methodology (Weekly Report)}
+
+\subsection{Week 0}
+
+In this week, I learned the basics of Python through the resources provided. I became familiar with the easy syntax of Python. I also explored the numpy and the matplotlib libraries of Python. I also learned how to use jupyter notebook. Using this, I completed the assignment which was a basic application of all the things I learned.
+
+Assignment : \href{https://github.com/dwijaap/WIDS-UID74/blob/main/Assignment0.py}{Week 0}
+
+\subsection{Week 1}
+
+In this week, I learned about MDPs(Markov Decision Process) and how to construct MDPs for given RL problems. I learned about the bandit walk, slipper bandit walk and the frozen lake environment for which I generated MDPs using Python (in Jupyter Notebook).
+
+Assignment : \href{https://github.com/dwijaap/WIDS-UID74/blob/main/Assignment1.ipynb}{Week 1}
+
+\subsection{Week 2}
+
+Week 2 was about using different strategies to maximize the reward for a given MDP. It taught me methods to come up with the best possible policy (a map which maps each state to the action with the highest state-value function in order to get maximize the reward). I learned new terms like the value function, policy-improvement, policy-iteration and value-iteration. Policy iteration and value iteration are two different methods which can generate the best possible policy for a given MDP so as to maximize the reward. I wrote the code to implement the two methods on the frozen lake MDP.
+
+Assignment : \href{https://github.com/dwijaap/WIDS-UID74/blob/main/Assignment2.ipynb}{Week 2}
+
+\subsection{Week 3}
+
+Week 3 dove deeper into the world of RL and taught many techniques that can be employed in case of Multi-Armed Bandits. Multi-Armed Bandits were introduced which are basically bandits which have multiple arms i.e. they are MDPs with with a single non-terminal state and a single time-step per episode. Now, to solve these MABs, two different approaches were applied : random exploration strategies and optimistic exploration strategies. As the names suggest, the first one employs an approach where we randomly explore all the actions and at the end the state-value function of all actions converge to the real reward function for a given action. The second one employs exploration as well as exploitation i.e. along with exploration, it also selects the actions with a higher reward function while iteration. According to these strategies, I implemented different strategies such as : epsilon-greedy strategy, UCB, KL-UCB, and Thompson Sampling. The latter 3 are based on optimistic exploration whereas the first one is based on the random exploration strategy.
+
+Assignment : \href{https://github.com/dwijaap/WIDS-UID74/blob/main/Assignment3.ipynb}{Week 3}
+
+
+\subsection{Week 4}
+
+This was the most interesting week and this week included the application of all our learnings to a real-life problem. In this week, I constructed a program for the game Black Jack. The code written implements TD($\lambda$) to get the state-value function for each of the observation tuples. TD($\lambda$) is mid way between Temporal difference and Monte Carlo (MC) prediction. 
+
+Assignment : \href{https://github.com/dwijaap/WIDS-UID74/blob/main/Black-Jack%20Project.ipynb}{Black-Jack projects}
+
+\section{Conclusion}
+
+This project has given me a lot of insight into the world of Reinforcement Learning and how different strategies in RL can be employed to solve real-world problems. One of them that we solved was the Black-Jack game. In all, it was a fun project.
+
+\end{document}
